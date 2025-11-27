@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Random - Ten Thousand Crows</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.ico" />
+    <style>
+        :root {
+            --bg: #000;
+            --fg: #e8ffe8;
+            --neon: #39ff14;
+        }
+
+        html, body {
+            background: var(--bg);
+            color: var(--fg);
+            font: 16px/1.600 sytem-ui, sans-serif;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            text-align: center;
+            margin: 1.2rem;
+            color: var(--neon);
+        }
+
+        nav {
+            margin: 10px 0;
+            text-align: center;
+        }
+
+            nav ul {
+                list-style: none;
+                padding: 0;
+                display: inline-flex;
+                gap: 2rem;
+            }
+
+            nav a {
+                color: var(--neon);
+                text-decoration: none;
+                font-weight: 600;
+                text-shadow: 0 0 8px var(--neon);
+            }
+
+                nav a:hover {
+                    color: #fff;
+                    text-shadow: 0 0 14px var(--neon), 0 0 30px var(--neon);
+                }
+
+            nav .active {
+                color: #fff;
+                text-decoration: underline;
+                text-underline-offset: 6px;
+            }
+
+        h1 {
+            text-shadow: 0 0 5px #39FF14, 0 0 10px #39FF14, 0 0 20px #39FF14, 0 0 40px #39FF14;
+            animation: pulse 2s infinite;
+        }
+
+        / * Gallery */
+        .wrap {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        .grid {
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        }
+
+        figure {
+            margin: 0;
+            border: 1px solid #1a1a1a;
+            border-radius: 14px;
+            overflow: hidden;
+            background: #0a0a0a;
+        }
+
+        img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            display: block;
+        }
+
+        figcaption {
+            padding: .7rem 1rem;
+            color: #a7ffb0;
+            font-size: .95rem;
+        }
+
+        .back {
+            display: block;
+            text-align: center;
+            margin: 1.5rem 0;
+            color: #9aff9a;
+        }
+
+            .back:hover {
+                color: #fff;
+            }
+    </style>
+</head>
+<body>
+    <h1>Ten Thousand Crows - Random</h1>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="art.html">Art</a></li>
+            <li><a class="active" href="art.html">Random</a></li>
+            <li><a href="code.html">Code</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="wrap">
+        <div class="grid">
+            <!-- IMAGE 1 -->
+            <figure>
+                <img loading="lazy" src="flowers.jpg" />
+                <figcaption>Flowers from the Silent Book Club</figcaption>
+            </figure>
+
+            <!-- IMAGE 2 -->
+            <figure>
+                <img loading="lazy" src="labubu.jpg" />
+                <figcaption>Poot Frunch</figcaption>
+            </figure>
+
+            <!-- IMAGE 3 -->
+            <figure>
+                <img loading="lazy" src="fish.jpg" />
+                <figcaption>Fish</figcaption>
+            </figure>
+        </div>
+
+        <a class="back" href="index.html">Back to Home</a>
+    </div>
+</body>
+</html>

@@ -8,6 +8,24 @@ body {
     /* background-repeat: no-repeat; */
 }
 
+#home {
+    height: 10px;
+    width: 10px;
+
+    position: absolute;
+    top: 40px;
+    left: 40px;
+
+    background: transparent;
+    border: none;
+    color: #28adff;
+    font-size: 4vw;
+    font-family: serif;
+    cursor: pointer;
+
+    animation: rainPulse 3s infinite ease-in-out;
+}
+
 #scene {
     position: relative;
     height: 100vh;
@@ -50,7 +68,7 @@ body {
     }
 }
 
-#rain-btn {
+/* #rain-btn {
     height: 20px;
     width: 20px;
 
@@ -66,7 +84,7 @@ body {
     cursor: pointer;
 
     animation: rainPulse 3s infinite ease-in-out;
-}
+} */
 
 @keyframes rainPulse {
     0% {
@@ -84,4 +102,5 @@ body {
 
 #rain-btn:hover {
     color: white;
+
 }

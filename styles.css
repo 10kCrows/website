@@ -22,6 +22,7 @@ a {
     font-size: 4vw;
     font-family: serif;
     cursor: pointer;
+    text-decoration: none;
 
     animation: rainPulse 3s infinite ease-in-out;
 }
@@ -102,6 +103,7 @@ a {
 
 a:hover {
     color: white;
-
+    text-decoration: none;
 }
+
 

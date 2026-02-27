@@ -1,0 +1,87 @@
+body {
+    background-image: url(Bedroom.png);
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-size: contain;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+}
+
+#scene {
+    position: relative;
+    height: 100vh;
+}
+
+#lampGlow {
+    position: absolute;
+
+    right: 10vw;
+    bottom: 10vh;
+    width: 10vw;
+    height: 500px;
+
+    pointer-events: none;
+
+    background: radial-gradient(circle,
+            rgba(255, 220, 150, 0.5) 0%,
+            rgba(255, 200, 120, 0.3) 40%,
+            rgba(255, 150, 80, 0.1) 70%,
+            transparent 100%);
+
+    filter: blur(20px);
+    animation: glowPulse 4s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+    0% {
+        opacity: 0.6;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(2);
+    }
+
+    100% {
+        opacity: 0.6;
+        transform: scale(1);
+    }
+}
+
+#rain-btn {
+    height: 20px;
+    width: 20px;
+
+    position: absolute;
+    top: 40px;
+    left: 40px;
+
+    background: transparent;
+    border: none;
+    color: #28adff;
+    font-size: 4vw;
+    font-family: serif;
+    cursor: pointer;
+
+    animation: rainPulse 3s infinite ease-in-out;
+}
+
+@keyframes rainPulse {
+    0% {
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.3;
+    }
+}
+
+#rain-btn:hover {
+    color: white;
+}
